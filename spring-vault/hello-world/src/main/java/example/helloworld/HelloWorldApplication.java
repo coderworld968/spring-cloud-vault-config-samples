@@ -52,11 +52,11 @@ public class HelloWorldApplication {
 		mySecretData.setPassword("white");
 
 		vaultTemplate.write(
-				"secret/myapplication/user/3128", mySecretData);
+				"secret/myapplication", mySecretData);
 		log.info("Wrote data to Vault");
 
 		VaultResponseSupport<MySecretData> response = vaultTemplate.read(
-				"secret/myapplication/user/3128", MySecretData.class);
+				"secret/myapplication", MySecretData.class);
 
 		log.info("Retrieved data {} from Vault", response.getData().getUsername());
 
@@ -73,7 +73,7 @@ public class HelloWorldApplication {
 
 		@Override
 		public ClientAuthentication clientAuthentication() {
-			return new TokenAuthentication("00000000-0000-0000-0000-000000000000");
+			return new TokenAuthentication("s.pUfO8hVQnMe0iTOA7QckLSYi");
 		}
 
 		@Override

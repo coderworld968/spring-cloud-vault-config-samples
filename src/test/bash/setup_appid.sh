@@ -10,7 +10,8 @@ echo "# Setup AppId authentucation for a provided UserId                        
 echo "###########################################################################"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-VAULT_BIN="${DIR}/../../../vault/vault"
+#VAULT_BIN="${DIR}/../../../vault/vault"
+VAULT_BIN="/Users/wangxuanzhong/Documents/valut/vault"
 
 echo "vault auth-enable app-id"
 ${VAULT_BIN} auth-enable app-id

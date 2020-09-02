@@ -15,6 +15,7 @@
  */
 package example.appid;
 
+import java.util.Map;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -30,6 +31,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootVaultAppIdAuthenticationApplication {
 
 	public static void main(String[] args) {
+		Map<String, String>  getenv = System.getenv();
+		System.out.println(getenv);
 		SpringApplication.run(SpringBootVaultAppIdAuthenticationApplication.class, args);
 	}
 

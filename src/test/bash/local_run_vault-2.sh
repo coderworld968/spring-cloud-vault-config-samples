@@ -9,7 +9,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 VAULT_BIN="/Users/wangxuanzhong/Documents/valut/vault"
 
 ${VAULT_BIN} server \
-            -config=${DIR}/vault.conf \
+            -config=${DIR}/vault-2.conf \
 #            -dev \
 #            -dev-root-token-id="00000000-0000-0000-0000-000000000000" \
 #            -dev-listen-address="0.0.0.0:8201"

@@ -9,7 +9,7 @@
 	<logger name="org.springframework.test" level="ERROR" />
 	<logger name="org.springframework.context.support" level="WARN" />
 
-	<root level="INFO">
+	<root level="debug">
 		<appender-ref ref="STDOUT"/>
 	</root>
 </configuration>

@@ -29,21 +29,21 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HelloWorldApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(HelloWorldApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(HelloWorldApplication.class, args);
+    }
 
-	@Value("${mykey}")
-	String mykey;
+    @Value("${mykey}")
+    String mykey;
 
-	@Value("${hello.world}")
-	String helloWorld;
+    @Value("${hello.world}")
+    String helloWorld;
 
-	@PostConstruct
-	private void postConstruct() {
-		System.out.println("##########################");
-		System.out.println(mykey);
-		System.out.println(helloWorld);
-		System.out.println("##########################");
-	}
+    @PostConstruct
+    private void postConstruct() {
+        System.out.println("##########################");
+        System.out.println("mykey:" + mykey);
+        System.out.println("helloWorld:" + helloWorld);
+        System.out.println("##########################");
+    }
 }

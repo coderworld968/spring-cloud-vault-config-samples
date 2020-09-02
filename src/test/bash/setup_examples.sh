@@ -1,7 +1,8 @@
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-VAULT_BIN="${DIR}/../../../vault/vault"
+#VAULT_BIN="${DIR}/../../../vault/vault"
+VAULT_BIN="/Users/wangxuanzhong/Documents/valut/vault"
 
 
 echo "###########################################################################"
